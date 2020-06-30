@@ -80,6 +80,12 @@ footer {
   margin-top: 20px;
 }
 
+footer a{
+  margin: 0 20px 0 0;
+  text-decoration: none;
+}
+
+
 /* -------  links ------- */
 
 a:link {
@@ -109,6 +115,13 @@ a:active {
   header nav {
     margin-top: 15px;
     font-size: large;
+    justify-content: flex-end;
+  }
+
+  footer p{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 30px;
   }
 }
 
