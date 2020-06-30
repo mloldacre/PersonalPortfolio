@@ -1,0 +1,60 @@
+/* -------  Type ------- */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+div{font-family: 'Balsamiq Sans', cursive;}
+
+ul{font-size: 18px;}
+ol{text-align:justify;}
+article a{font-size: 20px;}
+p{padding: 5px;}
+
+/* -------  Background ------- */
+body {
+	background-image:url(images/double-bubble-outline.png);
+  margin: 0;
+}
+
+/* -------  Spacing ------- */
+.gap-sm {
+    height: 40px;
+    width: auto;
+}
+.gap-md {
+    height: 100px;
+    width: auto;
+}
+.gap-lg {
+    height: 200px;
+    width: auto;
+}
+
+.gap-footer {
+    height: 10px;
+    width: auto;
+}
+
+
+.wrapper {
+  width: 85%; 
+  margin: auto; 
+}
+
+/* -------  links ------- */
+a:link { color: #06506d; }
+a:visited { color: #ff0000; }
+a:hover { color: #ff7700; }
+a:active { color: #a830b8; }
+
+/* ------- Flexbox ------- */
+.group{
+  display: flex;
+  flex-direction: row;
+}
+
+.item{
+  flex: 1;
+  margin: 10px;
+}
+
+.item-triple{
+  flex: 3;
+}
