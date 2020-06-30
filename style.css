@@ -1,29 +1,62 @@
 /* -------  Type ------- */
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
-div{font-family: 'Balsamiq Sans', cursive;}
 
-ul{font-size: 18px;}
-ol{text-align:justify;}
-article a{font-size: 20px;}
-p{padding: 5px;}
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+div {
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+ul {
+  font-size: 18px;
+}
+
+ol {
+  text-align: justify;
+}
+
+article a {
+  font-size: 20px;
+}
+
+p {
+  padding: 5px;
+}
+
+/* -------  Background ------- */
+
+body {
+  background-image: url(images/double-bubble-outline.png);
+  margin: 0;
+}
+
+/* ------- Flexbox ------- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-triple {
+  flex: 3;
+}
 
 /* ------- Header ------- */
-header{
+
+header {
   background-color: black;
   margin-bottom: 40px;
 }
 
-header h1{
+header h1 {
   color: white;
 }
 
-header h2{
+header h2 {
   color: white;
-}
-
-header img{
-  display: flex;
-  flex-direction: row;
 }
 
 header nav {
@@ -31,66 +64,66 @@ header nav {
   justify-content: center;
 }
 
-header nav ul {
-  display: flex;
-  padding-left: 0;
-  list-style: none;
-}
-
-header nav ul li a {
+header nav a {
   margin: 0 20px 0 0;
   text-decoration: none;
 }
-/* -------  Background ------- */
-body {
-	background-image:url(images/double-bubble-outline.png);
-  margin: 0;
+
+/* -------  Main ------- */
+
+/* -------  Footer ------- */
+
+footer {
+  display: flex;
+  color: white;
+  background-color: black;
+  margin-top: 20px;
 }
 
 /* -------  links ------- */
-a:link { color: white; }
-a:visited { color: #ff0000; }
-a:hover { color: #ff7700; }
-a:active { color: #a830b8; }
 
-/* ------- Flexbox ------- */
-.group{
-  display: flex;
-  flex-direction: column;
+a:link {
+  color: white;
 }
 
-.item{
-  flex: 1;
-  margin: 10px;
+a:visited {
+  color: #ff0000;
 }
 
-.item-triple{
-  flex: 3;
+a:hover {
+  color: #ff7700;
 }
 
+a:active {
+  color: #a830b8;
+}
 
 /* -------  Desktops ------- */
-@media all and (min-width: 600px){
-  header{
+
+@media all and (min-width: 600px) {
+  header {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
-}
-
-header nav{
-     margin-top: 15px;
-}
+  }
+  header nav {
+    margin-top: 15px;
+    font-size: large;
+  }
 }
 
 /* -------  Spacing ------- */
+
 .gap-sm {
   height: 40px;
   width: auto;
 }
+
 .gap-md {
   height: 100px;
   width: auto;
 }
+
 .gap-lg {
   height: 200px;
   width: auto;
@@ -101,8 +134,7 @@ header nav{
   width: auto;
 }
 
-
 .wrapper {
-width: 85%; 
-margin: auto; 
+  width: 85%;
+  margin: auto;
 }
