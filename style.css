@@ -69,6 +69,22 @@ header nav a {
   text-decoration: none;
 }
 
+header a:link {
+  color: white;
+}
+
+header a:visited {
+  color: #6fdff3;
+}
+
+header a:hover {
+  color: rgb(13, 98, 151);
+}
+
+header a:active {
+  color: #a830b8;
+}
+
 /* -------  Main ------- */
 
 form label {
@@ -95,6 +111,24 @@ form button{
   color: #fff;
  }
 
+ /* -------  links ------- */
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: #6fdff3;
+}
+
+a:hover {
+  color:rgb(13, 98, 151);
+}
+
+a:active {
+  color: #a830b8;
+}
+
 /* -------  Footer ------- */
 
 footer {
@@ -109,22 +143,19 @@ footer a{
   text-decoration: none;
 }
 
-
-/* -------  links ------- */
-
-a:link {
+footer a:link {
   color: white;
 }
 
-a:visited {
-  color: #ff0000;
+footer a:visited {
+  color: #6fdff3;
 }
 
-a:hover {
-  color: #ff7700;
+footer a:hover {
+  color: rgb(13, 98, 151);
 }
 
-a:active {
+footer a:active {
   color: #a830b8;
 }
 
