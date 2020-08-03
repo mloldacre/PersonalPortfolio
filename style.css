@@ -103,15 +103,22 @@ form textarea {
   margin-bottom: 20px;
 }
 
-form button{
-  padding: 10px 16px;  
+form button {
+  padding: 10px 16px;
   border: 0;
   font-size: 16px;
   background: #000;
   color: #fff;
- }
+}
 
- /* -------  links ------- */
+/* -------  Images ------- */
+
+#site-example {
+  flex: 1;
+  margin: 10px;
+}
+
+/* -------  Links ------- */
 
 a:link {
   color: black;
@@ -122,7 +129,7 @@ a:visited {
 }
 
 a:hover {
-  color:rgb(13, 98, 151);
+  color: rgb(13, 98, 151);
 }
 
 a:active {
@@ -138,7 +145,7 @@ footer {
   margin-top: 20px;
 }
 
-footer a{
+footer a {
   margin: 0 20px 0 0;
   text-decoration: none;
 }
@@ -172,13 +179,11 @@ footer a:active {
     font-size: large;
     justify-content: flex-end;
   }
-
-  footer p{
+  footer p {
     display: flex;
     justify-content: flex-end;
     padding: 0 30px;
   }
-
   form textarea {
     height: 4.75rem;
     width: 25%;
