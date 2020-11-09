@@ -1,8 +1,8 @@
 /* -------  Type ------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 div {
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Source Code Pro', monospace;
 }
 
 ul {
@@ -24,11 +24,17 @@ p {
 /* -------  Background ------- */
 
 body {
-  background-image: url(images/double-bubble-outline.png);
+  background-image: url(images/triangle-mosaic.png);
   margin: 0;
 }
 
 /* ------- Flexbox ------- */
+
+#info {
+  display: flex;
+  flex-direction: row;
+  border: 2px black solid;
+}
 
 .group {
   display: flex;
