@@ -28,11 +28,19 @@ body {
   margin: 0;
 }
 
-/* ------- Flexbox ------- */
+/* ------- Flexbox and Main ------- */
 
 #info {
   display: flex;
   flex-direction: row;
+  border: 2px black solid;
+}
+
+#info-list {
+  list-style-type: none;
+}
+
+#about-me {
   border: 2px black solid;
 }
 
