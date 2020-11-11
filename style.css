@@ -148,6 +148,7 @@ header nav a {
   display: flex;
   margin: 0 20px 0 0;
   text-decoration: none;
+  font-size: large;
 }
 
 header a:link {
@@ -164,6 +165,24 @@ header a:hover {
 
 header a:active {
   color: #a830b8;
+}
+
+#main-menu {
+  visibility: hidden;
+  overflow: hidden;
+}
+
+#menu-show-hide+label:before {
+  content: "Show menu"
+}
+
+#menu-show-hide:checked+label:before {
+  content: "Hide menu"
+}
+
+#menu-show-hide:checked+label+nav {
+  display: block;
+  visibility: visible;
 }
 
 /* -------  Main ------- */
@@ -252,6 +271,7 @@ footer a:active {
 /* -------  Desktops ------- */
 
 @media all and (min-width: 600px) {
+  /* Header */
   header {
     display: flex;
     justify-content: space-between;
@@ -262,11 +282,30 @@ footer a:active {
     font-size: large;
     justify-content: flex-end;
   }
+  
+  header nav a{
+    margin-top: 15px;
+    font-size: large;
+    justify-content: flex-end;
+  }
+  #menu-show-hide {
+    position: absolute;
+    left: -999em;
+  }
+  #main-menu a {
+    display: flex;
+    flex-direction: row;
+  }
+  #main-menu {
+    visibility: visible;
+  }
+  /* Footer */
   footer p {
     display: flex;
     justify-content: flex-end;
     padding: 0 30px;
   }
+  /* Main */
   form textarea {
     height: 4.75rem;
     width: 25%;
