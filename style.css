@@ -184,7 +184,6 @@ header a:active {
   height: 30px;
   background-color: black;
   color: white;
-  position: relative;
   overflow: hidden;
   transition: background-color 0.4s;
   text-align: center;
@@ -307,7 +306,7 @@ footer a:active {
     font-size: large;
     justify-content: flex-end;
   }
-  #menu-show-hide {
+  #menu-show-hide+label:before {
     position: absolute;
     left: -999em;
   }
@@ -317,6 +316,7 @@ footer a:active {
   }
   #main-menu {
     visibility: visible;
+    margin-left: 0%;
   }
   /* Footer */
   footer p {
