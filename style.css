@@ -170,19 +170,39 @@ header a:active {
 #main-menu {
   visibility: hidden;
   overflow: hidden;
+  margin-left: 70%;
+}
+
+#menu-show-hide {
+  display: inline;
+  margin-left: 80%;
 }
 
 #menu-show-hide+label:before {
-  content: "Show menu"
+  content: "Menu";
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.4s;
+  text-align: center;
 }
 
 #menu-show-hide:checked+label:before {
-  content: "Hide menu"
+  content: "Menu";
 }
 
 #menu-show-hide:checked+label+nav {
   display: block;
   visibility: visible;
+}
+
+/* Menu Checkbox */
+
+input[type=checkbox] {
+  visibility: hidden;
 }
 
 /* -------  Main ------- */
@@ -282,8 +302,7 @@ footer a:active {
     font-size: large;
     justify-content: flex-end;
   }
-  
-  header nav a{
+  header nav a {
     margin-top: 15px;
     font-size: large;
     justify-content: flex-end;
