@@ -24,7 +24,7 @@ p {
 /* -------  Background ------- */
 
 body {
-  background-image: url(images/prism.png);
+  background-image: url(images/webb.png);
   margin: 0;
 }
 
@@ -50,6 +50,9 @@ img {
   margin: auto;
 }
 
+.slideshow-container .text {
+  color: whitesmoke;
+}
 /* Next & previous buttons */
 
 .prev, .next {
@@ -64,8 +67,8 @@ img {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  background-color: #f1f1f1;
-  color: black;
+  background-color: black;
+  color: whitesmoke;
 }
 
 /* Position the "next button" to the right */
@@ -81,10 +84,13 @@ img {
 
 /* ------- Flexbox and Main ------- */
 
-#info {
+#info, #portfolio {
   display: flex;
   flex-direction: column;
+  background: black;
+  color: white;
   border: 2px black solid;
+  border-radius: 2px;
 }
 
 #info-list {
@@ -94,20 +100,18 @@ img {
 #about-me, #my-services, #quick-email {
   border: 2px black solid;
   padding: 10px;
-}
-
-#portfolio {
-  display: flex;
-  flex-direction: column;
-  border: 2px black solid;
+  background: black;
+  color: white;
+  border-radius: 2px
 }
 
 hr {
-  width: 98%;
+  width: 99%;
   margin-left: auto;
   margin-right: auto;
   height: 1px;
-  background-color: rgb(128, 124, 124);
+  background-color: rgb(238, 235, 235);
+  margin-bottom: 30px;
 }
 
 .group {
@@ -210,14 +214,12 @@ form label {
   display: block;
   font-size: 18px;
   margin-bottom: 5px;
-  color: black;
 }
 
 form textarea {
   display: block;
   height: 4.75rem;
   width: 100%;
-  color: #000;
   font-size: 16px;
   margin-bottom: 20px;
 }
@@ -226,8 +228,8 @@ form button {
   padding: 10px 16px;
   border: 0;
   font-size: 16px;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
 }
 
 /* -------  Images ------- */
@@ -241,20 +243,20 @@ form button {
 
 /* -------  Links ------- */
 
-a:link {
+#portfolio a:link {
+  color: black;
+  text-decoration: none;
+  background: whitesmoke;
+  padding: 10px 0px;
+  border-radius: 2px;
+}
+
+#portfolio a:visited {
   color: black;
 }
 
-a:visited {
-  color: #6fdff3;
-}
-
-a:hover {
+#portfolio a:hover {
   color: rgb(13, 98, 151);
-}
-
-a:active {
-  color: #a830b8;
 }
 
 /* -------  Footer ------- */
